@@ -1,0 +1,41 @@
+//Minimum Platforms required ------>>>>>
+
+/*Algorithm--->  Sort the arrival and departure arrays seperately.
+Then take plat=1,ans=1 (as we are already on platform 1),i=1&j=0;
+Then we run a loop while(i<n&&j<n)
+Now we check if at any point arr[i]<=dep[j]---> If this happens then we can say that we require extra platform.
+So we run the code as i++; and then plat++;
+else, we run the code as j++ and then plat--;
+Now we choose the gratest value of result at a particular time and thus we return the value of ans finally.
+*/
+
+/*Code----> 
+
+class Solution{
+    public:
+    //Function to find the minimum number of platforms required at the
+    //railway station such that no train waits.
+    int findPlatform(int arr[], int dep[], int n)
+    {
+    	// Your code here
+    	sort(arr,arr+n);
+    	sort(dep,dep+n);
+    	int plat=1,ans=1;
+    	int i=1,j=0;
+    	while(i<n&&j<n)
+    	{
+    	    if(arr[i]<=dep[j])
+    	    {
+    	        plat++;
+    	        i++;
+    	    }
+    	  else if(arr[i]>dep[j])
+    	    {
+    	     plat--;
+    	    j++;
+    	    }
+    	    ans=max(ans,plat);
+    	}
+    	return ans;
+    }
+    */
