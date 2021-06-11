@@ -3,7 +3,6 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-
 bool isPalindrome(int num)
 {
     int temp=num,n=0;
@@ -56,5 +55,4 @@ int main()
         cout<<a[i];
     }
     return 0;
-
 }
