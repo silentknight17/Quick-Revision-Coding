@@ -1,0 +1,27 @@
+                                Short Defintions
+
+1) Path between two vertices - All vertices which come in the path of two given
+vertices is called their path.
+
+2) Connected Graph- Each node has path from every other node.
+
+3) Connected Components- Each connected graph in a disconnected graph is 
+called a connected component.
+
+4) Tree- Connected Acyclic graph.
+
+Properties of Tree with n nodes->
+ (i) Number of edges=n-1
+ (ii) There are no cycles present.
+ (iii) Each node has path from every other vertex.
+
+5) Complete Graph - A graph in which each vertex is connected to every 
+other vertex by a direct edge.
+
+Properties of Complete Graph->
+(i) Number of edges in a complete graph = nC2 =(n*(n-1))/2.
+
+6) Representation of graphs->
+(i) In the form of adjacenecy matrix.
+(ii) In the form of adjacenecy graph.
+
