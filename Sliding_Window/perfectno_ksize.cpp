@@ -21,7 +21,6 @@ bool isPerfect(int n)
     return true;
     return false;
 }
-
 int main()
 {
     int n;
@@ -31,7 +30,7 @@ int main()
     cin>>a[i];
     int k;
     cin>>k;
-
+    
     //Replacing all perfect numbers in the array by 1 and non-perfect numbers by 0.
     for(int i=0;i<n;i++)
     {
@@ -42,8 +41,6 @@ int main()
         else
         a[i]=0;
     }
-
-    
     int ans=0,sum=0;
     for(int i=0;i<k;i++)
     {
