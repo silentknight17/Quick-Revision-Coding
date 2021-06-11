@@ -22,3 +22,5 @@ exhaustive solution. (Sometimes with binary search on answer).
 
 3) Wherever we can form a recurrence relation or given in question can be solved using DP.
 (Sometimes with matrix exponentiation).
+
+

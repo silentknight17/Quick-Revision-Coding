@@ -25,3 +25,9 @@ Properties of Complete Graph->
 (i) In the form of adjacenecy matrix.
 (ii) In the form of adjacenecy graph.
 
+Topological Sort-> It is an ordering of the nodes in a directed graph where 
+for each directed edge from node A to node B, node A appears before node B 
+in the ordering.
+
+Note: 1)Topological orderings are not unique.
+2) Topological sort occurs for only DAG(Directed Acyclic Graph).
