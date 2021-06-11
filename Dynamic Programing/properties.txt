@@ -1,0 +1,8 @@
+For any problem to be solved by dynamic programing, the question should possess the following two properties-
+
+1) Optimal substructure-> The problem must have a recurrence relationship. This means that the bigger 
+problem must be broken down into smaller subproblems.
+
+2) Overlapping subproblem-> This means that if we have found out a particular value, we store the value and 
+when we need this stored value in the future, we can use it.
+
