@@ -1,0 +1,1 @@
+{"name":"Local: dfs","url":"c:\\Users\\sarva\\Desktop\\Apna College\\Published\\Graphs\\dfs.cpp","tests":[{"id":1623433034519,"input":"7 7\n1 2\n1 3\n2 4\n2 5\n2 6\n2 7\n7 3","output":"1 2 4 5 6 7 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sarva\\Desktop\\Apna College\\Published\\Graphs\\dfs.cpp","group":"local","local":true}
