@@ -6,3 +6,19 @@ problem must be broken down into smaller subproblems.
 2) Overlapping subproblem-> This means that if we have found out a particular value, we store the value and 
 when we need this stored value in the future, we can use it.
 
+Ways to handle Overlapping subproblems->
+
+1) Memoization (Top-Down)-> A lookup table is maintained and checked before computation 
+of any state. Recursion is involved.
+
+2) Tabulation (Bottom-Up)-> Solution is built from base. It is an iterative process.
+
+Key Points --->
+
+1) Minimization and maximization problems are generally solved with dp where we want 
+exhaustive solution. (Sometimes with binary search on answer).
+
+2) "Find the number of ways" is also a very popular type of DP problem.
+
+3) Wherever we can form a recurrence relation or given in question can be solved using DP.
+(Sometimes with matrix exponentiation).
