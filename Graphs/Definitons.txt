@@ -31,3 +31,13 @@ in the ordering.
 
 Note: 1)Topological orderings are not unique.
 2) Topological sort occurs for only DAG(Directed Acyclic Graph).
+
+Bipartite Graph-> 
+1)It's vertices can be divided into two disjoint and independent sets U and V such that
+every edge connects a vertex in U to one in V.
+
+2)The graph does not contain any odd-length cycles.
+
+3) The graph is 2 colorable.
+
+If any of the above conditions are true, then all the conditions will be true.
