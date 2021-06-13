@@ -17,9 +17,7 @@ void color(int u,int curr)
     col[u]=curr;
     if(visited[u])
     return;
-
     visited[u]=true;
-
     for(auto i:adj[u])
     {
        

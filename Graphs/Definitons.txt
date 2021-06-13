@@ -41,3 +41,15 @@ every edge connects a vertex in U to one in V.
 3) The graph is 2 colorable.
 
 If any of the above conditions are true, then all the conditions will be true.
+
+
+Disjoint Set Union->
+
+In this we denote the set by a leader, say 
+A={1,2,,3,4}; suppose leader of A=2. B={5,6,7,8}; leader of B is 7.
+Then we can find the union of the two sets by comparing their leaders.
+
+Now, time complexities---->
+
+       O(N) ----------> O(log N) ----------> O(alpha(N))= O(1), where alpha(N) is known as inverse Ackerman Constant.
+    Union-find         Path Compression     Union by Rank/Size

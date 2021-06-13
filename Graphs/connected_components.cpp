@@ -6,12 +6,10 @@
 using namespace std;
 vector<vector<int>>adj;
 vector<bool>visited;
-
 int get_com(int i)
 {
     if(visited[i]==true)
     return 0;
-
     visited[i]=true;
     int ans=1;
     for(auto j:adj[i])
