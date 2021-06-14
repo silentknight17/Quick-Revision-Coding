@@ -53,3 +53,30 @@ Now, time complexities---->
 
        O(N) ----------> O(log N) ----------> O(alpha(N))= O(1), where alpha(N) is known as inverse Ackerman Constant.
     Union-find         Path Compression     Union by Rank/Size
+
+Minimum Spanning Tree---->
+
+1) Kruskal's Algorithm-> 
+a) Sort the edges in increasing order of their weights.
+b) Iterate in the sorted edges,
+if inclusion of ith edge leades to a cycle, then skip this edge.
+else, include the edge in the MST.
+
+Time Complexity: O(Elog V)
+Space Complexity: O(E+V)
+
+Kruskal's Algorithm makes use of Disjoint Set-Union Algorithm.
+
+2) Prims Algorithm-> Based on Greedy Paradigm.
+Unlike an edge in Kruskal's, we add vertex to the growing spanning tree in Prim's.
+
+Algorithm Steps:
+
+Maintain two disjoint sets of vertices. One containing vertices that are in the growing spanning tree and other that are not in the growing spanning tree.
+
+Select the cheapest vertex that is connected to the growing spanning tree and is not in the growing spanning tree and add it into the growing spanning tree.
+This can be done using Priority Queues.
+ Insert the vertices, that are connected to growing spanning tree, into the Priority Queue.
+Check for cycles. To do that, mark the nodes which have been already selected and insert only those nodes in the Priority Queue that are not marked.
+
+Time Complexity=O((V+E) log V)
