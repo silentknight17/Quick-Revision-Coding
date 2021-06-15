@@ -1,5 +1,5 @@
 //Question---> Snakes and ladders. The number on the dice is controlled by us. Find the minimum number of moves to reach 100.
-/* Algorithm->
+/* Algorithm-> Time Complexity = O(N).
 1) We can apply BFS.
 2) Push 1 into the queue, for all possibilities in the dice:
 Check if the next position is ladder, snake or empty.
