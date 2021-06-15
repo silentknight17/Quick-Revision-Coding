@@ -80,3 +80,31 @@ This can be done using Priority Queues.
 Check for cycles. To do that, mark the nodes which have been already selected and insert only those nodes in the Priority Queue that are not marked.
 
 Time Complexity=O((V+E) log V)
+
+Shortest Path Alogorithms->
+
+1) Dijsktra's Algorithm-> 
+IDEA--->
+
+Set all vertices distances = infinity except for the source vertex, set the source distance = 0.
+Push the source vertex in a min-priority queue in the form (distance , vertex), as the comparison in the min-priority queue will be according to vertices distances.
+Pop the vertex with the minimum distance from the priority queue (at first the popped vertex = source).
+Update the distances of the connected vertices to the popped vertex in case of "current vertex distance + edge weight < next vertex distance", then push the vertex
+with the new distance to the priority queue.
+If the popped vertex is visited before, just continue without using it.
+Apply the same algorithm again until the priority queue is empty.
+
+
+2) Bellman Ford Algorithm->
+Bellman Ford's algorithm is used to find the shortest paths from the source vertex to all other vertices in a weighted graph. It depends on the following concept: Shortest path contains at most n-1 edges, because the shortest path couldn't have a cycle.
+
+Algorithm->
+1) The outer loop traverses from 0 to n-1 (the maximum number of edges)
+2) Loop over all edges, check if the next node distance > current node distance + edge weight, in this case update the next node distance to "current node distance + edge weight".
+
+This algorithm depends on the relaxation principle where the shortest distance for all vertices is gradually replaced by more accurate values until eventually reaching the optimum solution. In the beginning all vertices have a distance of "Infinity", but only the distance of the source vertex =0, then update all the connected vertices with the new distances (source vertex distance + edge weights), then apply the same concept for the new vertices with new distances and so on.
+
+Advantages->
+1) It can be used to for negative weights as well.
+2) It can be used to detect negative cycle.
+
