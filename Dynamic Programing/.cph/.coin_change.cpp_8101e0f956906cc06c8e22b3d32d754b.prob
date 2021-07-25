@@ -1,0 +1,1 @@
+{"name":"Local: coin_change","url":"c:\\Users\\sarva\\Desktop\\Apna College\\Published\\Dynamic Programing\\coin_change.cpp","tests":[{"id":1626364821677,"input":"3\n1 2 3 \n6","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sarva\\Desktop\\Apna College\\Published\\Dynamic Programing\\coin_change.cpp","group":"local","local":true}
